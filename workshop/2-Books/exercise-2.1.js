@@ -15,6 +15,49 @@
 //
 // Console.log them to verify that all is working.
 
-class Book {}
+class Book {
+    constructor(title, genre, author, isRead) {
+        this.title = title;
+        this.genre = genre;
+        this.author = author;
+        this.isRead = isRead || false;
+    }
+};
+
+let book1 = new Book(
+    "Who Has Time?",
+    "Drama",
+    "Decode Student",
+    true
+);
+
+let book2 = new Book(
+    "Gender Trouble",
+    "Queer Theory",
+    "Judith Butler",
+    true
+);
+
+let book3 = new Book(
+    "Stone Butch Blues",
+    "Trans fiction",
+    "Leslie Feinberg",
+    true
+);
+
+let book4 = new Book(
+    "Rememberance of Things Past",
+    "Modernist",
+    "Marcel Proust"
+);
+
+let book5 = new Book(
+    "The Sailor Who Fell from Grace",
+    "Fiction",
+    "Yukio Mishima",
+    true
+);
+
+
 
 console.log(book1, book2, book3, book4, book5);
